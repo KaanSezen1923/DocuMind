@@ -73,7 +73,7 @@ if "retriever" not in st.session_state:
 
 if "messages" not in st.session_state:
     st.session_state["messages"]=[]
-    st.session_state["messages"].append({"role":"ai","content":"Hi. I'm Chat PDF.Upload PDF files and ask me questions!"})
+    st.session_state["messages"].append({"role":"ai","content":"Hi. I'm DocuMind.Upload PDF files and ask me questions!"})
     
 for message in st.session_state["messages"]:
     with st.chat_message(message["role"]):
