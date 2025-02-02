@@ -1,3 +1,7 @@
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
+
 import os
 import tempfile
 import streamlit as st
@@ -9,9 +13,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
-import pysqlite3
 
-sys.modules["sqlite3"] = pysqlite3
 
 load_dotenv(find_dotenv())
 gemini_api_key=os.getenv("GEMINI_API_KEY")
