@@ -1,6 +1,3 @@
-Below is a sample GitHub README for your project based on the code you provided. It assumes the project is named "DocuMind," a Retrieval-Augmented Generation (RAG) based chatbot for querying PDF documents. Feel free to customize it further based on your specific needs!
-
----
 
 # DocuMind - RAG-based Chat with PDF
 
